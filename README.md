@@ -18,7 +18,8 @@ contentful: {
   space: 'YOUR-CONTENTFUL-SPACE',
   accessToken: 'YOUR-CONTENTFUL-ACCESS-TOKEN',
   previewAccessToken: 'YOUR-CONTENTFUL-PREVIEW-ACCESS-TOKEN',
-  usePreviewApi: false
+  usePreviewApi: false,
+  environment: 'OPTIONAL CONTENTFUL ENVIRONMENT NAME'
 }
 ```
 
@@ -27,7 +28,7 @@ You can enable the Preview API for use in development in `config/environment.js`
 ```js
   if (environment === 'development') {
     // ...
-    
+
     ENV.contentful.usePreviewApi = true;
   }
 ```
